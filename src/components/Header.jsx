@@ -1,4 +1,3 @@
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
@@ -7,9 +6,11 @@ import {
   InputRightElement,
   Text,
   IconButton,
-  Image,
+  Img,
 } from "@chakra-ui/react";
 import Flag from "../assets/america.webp";
+
+import Logo from "../assets/logo.png";
 
 import { useState } from "react";
 import {
@@ -69,9 +70,7 @@ const Header = () => {
       top="0"
       zIndex="999999999"
     >
-      <Text fontSize="xl" fontWeight="bold" zIndex="99">
-        Logo
-      </Text>
+      <Img src={Logo} w="4rem" />
 
       {/* Desktop View */}
       <Flex display={{ base: "none", lg: "flex" }} align="center" gap="2rem">
@@ -120,7 +119,7 @@ const Header = () => {
             <Flex
               key={index}
               align="center"
-              gap="0.5rem"
+              justify="center"
               cursor="pointer"
               _hover={{
                 color: "#fff",

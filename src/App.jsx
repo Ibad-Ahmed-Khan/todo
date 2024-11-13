@@ -10,7 +10,7 @@ function App() {
   return (
     <Flex
       flexDir="column"
-      w="100vw"
+      w="99vw"
       style={{ fontFamily: '"Sour Gummy", sans-serif' }}
     >
       <HeaderTop />
